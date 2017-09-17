@@ -2,11 +2,11 @@ import React from "react";
 import { expect } from 'chai';
 import { shallow } from "enzyme";
 
-import App from "./App";
+import Template from "./Template.jsx";
 
-describe("App component", () => {
+describe("Template component", () => {
     it("renders itself", () => {
-        const component = shallow(<App />);
+        const component = shallow(<Template />);
         expect(component.node).not.to.be.equal(null);
 
         component.unmount();

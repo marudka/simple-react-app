@@ -1,7 +1,13 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Template from "./pages/Template.jsx"
 
 function App() {
-    return <h2>Hello react boilerplate! :)</h2>;
+    return (
+        <BrowserRouter>
+            <Template />
+        </BrowserRouter>
+    );
 }
 
 export default App;
